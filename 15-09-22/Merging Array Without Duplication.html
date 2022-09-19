@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Merging Array Without Duplication</title>
+        <script>
+            function merge(a1,a2)
+            {
+                let a = a1.concat(a2);
+                let uniqueArr = [];
+                for(let i of a) 
+                {
+                    if(uniqueArr.indexOf(i) === -1) 
+                    {
+                        uniqueArr.push(i);
+                    }
+                }
+                document.write("1st array is:"+a1);
+                document.write("2nd array is:"+a2);
+                document.write("After merging array is:"+uniqueArr);
+            }
+            function accept()
+            {
+                var i,n1,n2;
+                var a1 = new Array();
+                var a2 = new Array();
+                n1 = window.prompt("Enter the size of 1st array:");
+                n2 = window.prompt("Enter the size of 2nd array:");
+                for(i=0;i<n1;i++)
+                    {
+                        a1[i]=window.prompt("Enter the 1st array elements:");
+                    }
+                for(i=0;i<n2;i++)
+                    {
+                        a2[i]=window.prompt("Enter the 2nd array elements:");
+                    }
+                merge(a1, a2);
+            }
+        </script>
+    </head>
+    <body>
+        <button type="button" onclick="accept()">Click Here</button>
+    </body>
+</html>

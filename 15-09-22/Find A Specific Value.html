@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Find A Specific Value</title>
+        <script>
+            function findvalue()
+            {
+                var n,i,Name;
+                var name = new Array();
+                n = window.prompt("Enter the size of an array:");
+                for(i=0;i<n;i++)
+                {
+                    name[i] = window.prompt("Enter the elements:");
+                }
+                Name = window.prompt("Enter the name you want to find:");
+                if(name.includes(Name))
+                {
+                    document.write(Name+" is present in the array");            
+                }
+                else
+                {
+                    document.write(Name+" is absent from the array");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button type="button" onclick="findvalue()">Click Here</button>
+    </body>
+</html>

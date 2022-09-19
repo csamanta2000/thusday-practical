@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Adding Element To Start Of Array</title>
+        <script>
+            function addElement(a) 
+            {
+                var x;
+                x = window.prompt("Enter the element you want to add:");
+                A = [x].concat(a);
+                document.write("The Array after element is: "+A);
+            }
+            function accept()
+            {
+                var i,n;
+                var a = new Array();
+                n = window.prompt("Enter the size of array:");
+                for(i=0;i<n;i++)
+                {
+                    a[i]=window.prompt("Enter the elements:");
+                }
+                addElement(a);
+            }
+        </script>
+    </head>
+    <body>
+        <button type="button" onclick="accept()">Click Here</button>
+    </body>
+</html>
